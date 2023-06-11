@@ -6,5 +6,6 @@ import (
 )
 
 type Client interface {
-	Aggregate(ctx context.Context, distance *types.AggregateRequest) error
+	Aggregate(context.Context, *types.AggregateRequest) error
+	GetInvoice(context.Context, int) (*types.Invoice, error)
 }
