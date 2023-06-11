@@ -32,7 +32,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	_, err = c.Aggregate(context.Background(), &types.AggregateRequest{
+	err = c.Aggregate(context.Background(), &types.AggregateRequest{
 		ObuID: 1,
 		Value: 1.2,
 		Unix:  time.Now().UnixNano(),
