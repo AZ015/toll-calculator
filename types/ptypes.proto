@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option go_package = "github.com/toll-calculator/types";
 
-service DistanceAggregator{
+service Aggregator{
     rpc Aggregate(AggregateRequest) returns (None);
 }
 
